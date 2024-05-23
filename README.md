@@ -1,68 +1,57 @@
-<div style="text-align: left;">
-  <img src="https://github.com/GaiaEcotrack/Gaia/assets/106754820/e33ae44b-617c-4366-a5e9-8c6aa82100f4" width="full" alt="gaiaa">
-</div>
+# Gaia eco-track Server
 
+Servidor de la plataforma descentralizada Gaia, gestion de energia renovable mediante el uso de la blockchain Vara network.
+El futuro llegó de las energias renovables esta aqui, y su nombre es Gaia Eco-track.
+Backend creado con python, flask mongoDb como base de datos.
 
-Gaia Ecotrack seeks to integrate decentralized electricity generation systems, such as rooftop solar, domestic wind turbines and small-scale hydroelectric systems. The platform allows users to generate and sell their own energy through tokens on the blockchain. It uses optimization algorithms to coordinate the consumption and production of renewable energy in real time, adjusting demand based on solar production predictions. Mass adoption is encouraged through smart contracts developed with the GEAR protocol technology that facilitate the direct marketing of renewable energy between producers and consumers, eliminating intermediaries and reducing costs
+## Requisitos Previos
 
+Antes de comenzar, asegúrate de tener instalado Python en tu sistema. Este proyecto requiere Python 3.x.
 
-## Start, Clone the repository:
+### Instalación de Python en Windows
 
-**Command:**
+1. **Descargar el Instalador de Python**:
+   - Visita el [sitio web oficial de Python](https://www.python.org/).
+   - Dirígete a la sección de descargas para Windows o usa este enlace directo: [Descargas de Python para Windows](https://www.python.org/downloads/windows/).
+   - Descarga el instalador más reciente de Python 3 para Windows. Selecciona la versión de 64 bits a menos que tu sistema requiera la versión de 32 bits.
+
+2. **Ejecutar el Instalador**:
+   - Localiza el archivo descargado y ejecútalo.
+   - Asegúrate de marcar la casilla "Add Python 3.x to PATH" antes de hacer clic en "Install Now".
+
+3. **Verificar la Instalación**:
+   - Abre la línea de comandos y escribe `python --version`. Deberías ver la versión de Python instalada.
+
+4. **Instalar pip**:
+   - `pip` se instala automáticamente con Python 3.4 y versiones posteriores.
+   - Verifica su instalación con `pip --version`.
+
+5. **Actualizar pip** (opcional):
+   - Actualiza pip con el comando `python -m pip install --upgrade pip`.
+
+## Configuración del Proyecto
+
+Instrucciones para configurar el proyecto localmente. Por ejemplo:
+
 ```bash
-git clone https://github.com/GaiaEcotrack/Gaia.git
-```
+git clone https://github.com/ilichb/VaraEnergy.git
+cd VaraEnergy
+# Continúa con las instrucciones específicas de configuración del proyecto
 
-##  To run the Frontend, positioned in the directory /Client
+# Crear un entorno virtual
+python -m venv venv
 
-### Step 1, Install dependencies:
-**Command:**
-```bash
-npm install --force
-```
+# Activar el entorno virtual
+# En Windows
+.\venv\Scripts\activate
 
-### Step 2, Run the project:
-**Command:**
-```bash
-npm start
-```
+# En Unix o MacOS
+source venv/bin/activate
 
-##  To run the Smart Contract, positioned in the directory /Contracts
+Instalacion de dependencias
 
-### Step 1, Compile
-**Command:**
-```bash
-cargo build --release
-```
+pip install -r requirements.txt
 
-### Step 2, Deploy the contract on the IDEA platform and interact with your contract.
+Iniciar aplicacion
 
-### Some Gaia plaftorm captures:
-<hr/>
-<div>
-<img width="1508" alt="login" src="https://github.com/GaiaEcotrack/Gaia/assets/106754820/fb889317-c404-4020-b9fa-329e376519b2">
-</div>
-<div>
-<img width="1493" alt="home" src="https://github.com/GaiaEcotrack/Gaia/assets/106754820/5ae128aa-6dac-4e3a-8015-6e63b67d9de9">
-</div>
-<div>
-<img width="1500" alt="profileReadme" src="https://github.com/GaiaEcotrack/Gaia/assets/106754820/c1b5677d-e548-4cde-893d-bcdbb501f2e2">
-</div>
-<div>
-<img width="1488" alt="wallet" src="https://github.com/GaiaEcotrack/Gaia/assets/106754820/d63a134c-b9e1-46a7-92b0-b094fde557f5">
-</div>
-<div>
-<img width="1395" alt="transaction" src="https://github.com/GaiaEcotrack/Gaia/assets/106754820/ab7b0001-7e41-40dd-ae21-c3f4310aa416">
-</div>
-<div>
-<img width="1473" alt="gear" src="https://github.com/GaiaEcotrack/Gaia/assets/106754820/39b21edb-3108-4b5d-81b0-bbe9b3e3dbd8">
-</div>
-<hr/>
-
-### Our developer team
-
-- [Agustin Nazer](https://github.com/AgusNazer)
-- [Diego Rosas](https://github.com/diego34346)
-- [Nicolas Villagra](https://github.com/NicolasVillagra)
-
-<hr>
+python application.py
