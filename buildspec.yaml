@@ -6,7 +6,7 @@ phases:
       - pip install -r requirements.txt
   build:
     commands:
-      - python -m unittest discover -s my-api
+      - python application.py
 artifacts:
   files:
     - '**/*'

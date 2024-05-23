@@ -3,13 +3,13 @@
 
 branch-defaults:
   default:
-    environment: api-env
+    environment: Gaiadev-dev
 environment-defaults:
   api-env:
     branch: null
     repository: null
 global:
-  application_name: my-api
+  application_name: Gaiadev
   default_ec2_keyname: null
   default_platform: python-3.7
   default_region: us-east-2
