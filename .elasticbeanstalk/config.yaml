@@ -1,0 +1,22 @@
+# You must set this file into .elasticbeanstalk direcotry like this;
+# .elasticbeanstalk/config.yaml
+
+branch-defaults:
+  default:
+    environment: api-env
+environment-defaults:
+  api-env:
+    branch: null
+    repository: null
+global:
+  application_name: my-api
+  default_ec2_keyname: null
+  default_platform: python-3.7
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  sc: null
+  workspace_type: Application
